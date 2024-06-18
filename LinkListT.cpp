@@ -1,5 +1,6 @@
 ﻿#include <stdio.h>
 #include <iostream>
+#include "Mystring.cpp"
 
 template <typename T>
 struct Node
@@ -176,14 +177,13 @@ public:
     }
 };
 
+
+
 int main() {
-    LinkList<std::string> lt;
-    lt.append("hello");
-    lt.append("world");
-    lt.append("!");
-    lt.insert("   ",2);
-    lt.print();
-    std::cout << "Query:" << lt.query(3) << std::endl;
- 
+    LinkList<Mystring> msList;
+    Mystring ms1;
+    msList.append(ms1);
+    msList.append(ms1);
+    msList.append(ms1);
     return 0;
 }
