@@ -182,8 +182,7 @@ public:
 int main() {
     LinkList<Mystring> msList;
     Mystring ms1;
-    msList.append(ms1);
-    msList.append(ms1);
-    msList.append(ms1);
+    Mystring* ms2 = &ms1;
+    Mystring ms3 = ms1;
     return 0;
 }
